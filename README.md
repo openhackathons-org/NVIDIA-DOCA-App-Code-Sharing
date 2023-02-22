@@ -46,3 +46,7 @@
     <td>NVIDIA 官方双肩背包及 T 恤衫</td>
   </tr>
 </Table>
+
+## 活动条款与条件
+> 请参考 NVIDIA DOCA 应用代码分享活动的[**条款与条件**](http://www.nvidia.cn "条款与条件")。
+
