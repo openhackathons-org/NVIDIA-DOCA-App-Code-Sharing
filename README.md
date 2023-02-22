@@ -30,19 +30,19 @@
 ## 奖品
 > 除了以下奖品外，获奖 的 DOCA 应用代码还将在 NVIDIA 官方博客中获得特别表彰。
 
-
-
 <table>
   <tr> 
     <td>一等奖</td>
-    <td>![一等奖奖品]（）
+    <td><img src="/assets/dpu-hackathon-1st-place-jetson-tx2-3c33-l@2x.jpg" title="一等奖" height="200" width="auto"></td>
     <td>NVIDIA Jetson TX2 NX 4GB 核心模块 + Y-C6 载板，以及NVIDIA 官方双肩背包和 T 恤衫</td>
   </tr>  
   <tr>
     <td>二等奖</td>
+    <td><img src="/assets/nvidia-jetson-tx2-module-2c50-l@2x.jpg" title="二等奖" height="200" width="auto"></td>
     <td>NVIDIA Jetson TX2 NX 4GB 核心模块，以及NVIDIA 官方双肩背包和 T 恤衫</td>      
   <tr>
     <td>三等奖</td>
+    <td><img src="/assets/Backpack.jpg" title="三等奖" height="200" width="auto"></td>
     <td>NVIDIA 官方双肩背包及 T 恤衫</td>
   </tr>
 </Table>
