@@ -45,7 +45,7 @@
     <td align="center" width="400"><img src="/assets/Backpack+T.jpg" title="三等奖" height="150" width="auto"></td>   
   </tr>  
   <tr>
-    <td align="center">NVIDIA Jetson TX2 NX 4GB 核心模块<br/> + Y-C6 载板，以及NVIDIA 官方双肩背包和 T 恤衫</font></td>
+    <td align="center">NVIDIA Jetson TX2 NX 4GB 核心模块 + Y-C6 载板，以及NVIDIA 官方双肩背包和 T 恤衫</font></td>
     <td align="center">NVIDIA Jetson TX2 NX 4GB 核心模块，以及NVIDIA 官方双肩背包和 T 恤衫</td>      
     <td align="center">NVIDIA 官方双肩背包及 T 恤衫</td>
   </tr>
