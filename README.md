@@ -34,8 +34,8 @@
 > - 开发级别：采用更高级别抽象的 DOCA 库，如 DOCA Flow
 >
 > **如果您没有相应的软硬件开发环境，请以电子邮件方式联系 NVIDIA 授权合作伙伴 DPU &  DOCA 卓越中心获得基于 NVIDIA BlueField-2 DPU 的免费的 DOCA 开发环境。**
-> [丽台（上海）信息科技有限公司](doca@leadtek.com)
-> [上海信泓智能科技有限公司](doca@zentek.com.cn)
+> - [丽台（上海）信息科技有限公司](doca@leadtek.com)
+> - [上海信泓智能科技有限公司](doca@zentek.com.cn)
 >
 > 如需提交发布 DOCA 应用代码，请参考 [**NVIDIA DOCA 应用代码分享活动 - 提交流程**](https://github.com/openhackathons-org/NVIDIA-DOCA-App-Code-Sharing/blob/main/assets/DOCA%20Application%20Code%20Sharing.pdf "提交流程") 文档。
 >
