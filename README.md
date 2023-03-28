@@ -4,7 +4,7 @@
 <!Event Period>
 在线活动：2023 年 4 月 10 日至 2024 年 1 月 10 日
 <!Event Landing Page for Registration>
-想要参加 **NVIDIA DOCA 应用代码分享**活动，请[**立即注册**](http://www.nvidia.cn "活动主页")!
+想要参加 **NVIDIA DOCA 应用代码分享**活动，请[**立即注册**](http://www.nvidia.cn/events/doca-application-code-sharing/ "活动主页")!
 
 
 <!Event Introduction>
@@ -22,7 +22,7 @@
 
 <!Regestration>
 ## 如何注册？
-> NVIDIA DOCA 应用代码分享活动将于 2023 年 4 月 10 日开放注册，并将于 2024 年 1 月 10 日关闭注册。注册期间，您可以通过点击[**活动主页**](http://www.nvidia.cn "活动主页")上的“立即注册”按钮进行注册。您需要在开源平台 GitHub 指定活动专区发布基于 NVIDIA DOCA 开发的应用的源代码，并在注册时提交发布上述应用源代码的 GitHub 账号链接。
+> NVIDIA DOCA 应用代码分享活动将于 2023 年 4 月 10 日开放注册，并将于 2024 年 1 月 10 日关闭注册。注册期间，您可以通过点击[**活动主页**](http://www.nvidia.cn/events/doca-application-code-sharing/ "活动主页")上的“立即注册”按钮进行注册。您需要在开源平台 GitHub 指定活动专区发布基于 NVIDIA DOCA 开发的应用的源代码，并在注册时提交发布上述应用源代码的 GitHub 账号链接。
 >
 > 活动期间内，活动组委会会定期组织评委对注册时提交的 NVIDIA DOCA 应用代码项目进行持续入围审核、评选及公布。在关闭注册后，评委将评定出获奖开发者，并对他们进行奖励和表彰。
 
@@ -53,4 +53,4 @@
 
 <!T&C>
 ## 活动注册条款与条件
-> 请参考 NVIDIA DOCA 应用代码分享活动的[**条款与条件**](http://www.nvidia.cn "条款与条件")。
+> 请参考 NVIDIA DOCA 应用代码分享活动的[**条款与条件**](http://www.nvidia.cn/events/doca-application-code-sharing/terms-and-conditions "条款与条件")。
