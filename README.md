@@ -28,7 +28,7 @@
 
 ## 如何提交发布 DOCA 应用代码（必读）
 > 请参考 [**NVIDIA DOCA 应用代码分享活动 - 提交流程**](./assets/DOCA Application Code Sharing.pdf "提交流程") 文档。
-
+  请参考 NVIDIA DOCA 应用代码分享活动的[**NVIDIA DOCA 应用代码分享活动 - 提交流程**](http://www.nvidia.cn/events/doca-application-code-sharing/terms-and-conditions "条款与条件")。
 
 <!Prizes>
 ## 活动奖品
