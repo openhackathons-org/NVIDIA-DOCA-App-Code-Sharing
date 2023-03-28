@@ -26,10 +26,21 @@
 >
 > 活动期间内，活动组委会会定期组织评委对注册时提交的 NVIDIA DOCA 应用代码项目进行持续入围审核、评选及公布。在关闭注册后，评委将评定出获奖开发者，并对他们进行奖励和表彰。
 
+<!Pull Requests>
 ## 如何提交发布 DOCA 应用代码（必读）
-> 请参考 [**NVIDIA DOCA 应用代码分享活动 - 提交流程**](https://github.com/openhackathons-org/NVIDIA-DOCA-App-Code-Sharing/blob/main/assets/DOCA%20Application%20Code%20Sharing.pdf "提交流程") 文档。
+> **为了您更好的参与活动，建议采用的开发环境**
+> - 硬件环境：NVIDIA BlueField-2 DPU 或 NVIDIA BlueField-3 DPU
+> - 软件环境：NVIDIA DOCA 1.5.1 及以上版本
+> - 开发级别：采用更高级别抽象的 DOCA 库，如 DOCA Flow
+>
+> **如果您没有相应的软硬件开发环境，请以电子邮件方式联系 NVIDIA 授权合作伙伴 DPU &  DOCA 卓越中心获得免费的 DOCA 开发环境。**
+> [丽台（上海）信息科技有限公司](doca@leadtek.com)
+> [上海信泓智能科技有限公司]（doca@zentek.com.cn）
+>
+> 如需提交发布 DOCA 应用代码，请参考 [**NVIDIA DOCA 应用代码分享活动 - 提交流程**](https://github.com/openhackathons-org/NVIDIA-DOCA-App-Code-Sharing/blob/main/assets/DOCA%20Application%20Code%20Sharing.pdf "提交流程") 文档。
+>
+> 如遇到困难或问题，请联系[活动负责人]（adah@nvidia.com）
   
-
 <!Prizes>
 ## 活动奖品
 > 除了以下奖品外，获奖的 DOCA 应用代码还将在 NVIDIA 官方博客中获得特别表彰。
