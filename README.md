@@ -27,8 +27,8 @@
 > 活动期间内，活动组委会会定期组织评委对注册时提交的 NVIDIA DOCA 应用代码项目进行持续入围审核、评选及公布。在关闭注册后，评委将评定出获奖开发者，并对他们进行奖励和表彰。
 
 ## 如何提交发布 DOCA 应用代码（必读）
-> 请参考 [**NVIDIA DOCA 应用代码分享活动 - 提交流程**](./assets/DOCA Application Code Sharing.pdf "提交流程") 文档。
-  请参考 NVIDIA DOCA 应用代码分享活动的[**NVIDIA DOCA 应用代码分享活动 - 提交流程**](http://www.nvidia.cn/events/doca-application-code-sharing/terms-and-conditions "条款与条件")。
+> 请参考 [**NVIDIA DOCA 应用代码分享活动 - 提交流程**](file://assets/DOCA Application Code Sharing.pdf "提交流程") 文档。
+  
 
 <!Prizes>
 ## 活动奖品
