@@ -37,7 +37,7 @@
 > - [丽台（上海）信息科技有限公司](doca@leadtek.com)
 > - [上海信泓智能科技有限公司](doca@zentek.com.cn)
 >
-> 如需提交发布 DOCA 应用代码，请参考 [**NVIDIA DOCA 应用代码分享活动 - 提交流程**](https://github.com/openhackathons-org/NVIDIA-DOCA-App-Code-Sharing/blob/main/assets/DOCA Application Code Sharing.pdf "提交流程") 文档。
+> 如需提交发布 DOCA 应用代码，请参考 [**NVIDIA DOCA 应用代码分享活动 - 提交流程**](https://github.com/openhackathons-org/NVIDIA-DOCA-App-Code-Sharing/blob/main/assets/DOCA-Application-Code-Sharing.pdf "提交流程") 文档。
 >
 > 如遇到困难或问题，请联系活动负责人 adah@nvidia.com。
   
