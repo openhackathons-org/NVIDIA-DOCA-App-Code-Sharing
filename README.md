@@ -39,7 +39,7 @@
 >
 > 如需提交发布 DOCA 应用代码，请参考 [**NVIDIA DOCA 应用代码分享活动 - 提交流程**](https://github.com/openhackathons-org/NVIDIA-DOCA-App-Code-Sharing/blob/main/assets/DOCA%20Application%20Code%20Sharing.pdf "提交流程") 文档。
 >
-> 如遇到困难或问题，请联系[活动负责人](adah@nvidia.com)。
+> 如遇到困难或问题，请联系活动负责人 <adah@nvidia.com>。
   
 <!Prizes>
 ## 活动奖品
