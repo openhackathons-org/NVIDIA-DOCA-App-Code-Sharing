@@ -2,7 +2,7 @@
 # DOCA 无处不在-NVIDIA DOCA 应用代码分享活动
 
 <!Event Period>
-在线活动：2023 年 4 月 10 日至 2024 年 1 月 10 日
+在线活动：2023 年 4 月 10 日至 2024 年 1 月 10 日sfsfsdfsdfsd
 <!Event Landing Page for Registration>
 想要参加 **NVIDIA DOCA 应用代码分享**活动，请[**立即注册**](https://www.nvidia.cn/networking/doca-application-code-sharing/  "活动主页")!
 
