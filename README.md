@@ -52,7 +52,7 @@
     <td align="center"><b>第三名</b></td>
   </tr>
   <tr>
-    <td align="center" width="400"><img src="/assets/dpu-hackathon-1st-place-jetson-tx2-3c33-l@2x.jpg" title="一等奖" height="150" width="auto"></td>
+    <td align="center" width="400"><img src="/assets/dpu-hackathon-1st-place-jetson-tx2-3c33-l@2x n.jpg" title="一等奖" height="150" width="auto"></td>
     <td align="center" width="400"><img src="/assets/nvidia-jetson-tx2-module-2c50-l@2x.jpg" title="二等奖" height="150" width="auto"></td>
     <td align="center" width="400"><img src="/assets/Backpack+T.jpg" title="三等奖" height="150" width="auto"></td>   
   </tr>  
