@@ -63,8 +63,6 @@
   </tr>
 </Table>
 
-<img src="/assets/Backpack+T.jpg" title="三等奖" height="150" width="auto">
-
 <!T&C>
 ## 活动注册条款与条件
 > 请参考 NVIDIA DOCA 应用代码分享活动的[**条款与条件**](https://www.nvidia.cn/networking/doca-application-code-sharing/terms-and-conditions/ "条款与条件")。
