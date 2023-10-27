@@ -1,0 +1,183 @@
+Build started at 2023-10-25T14:49:07.082481
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.61.2
+Source dir: /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd
+Build dir: /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build
+Build type: native build
+Project name: L2FWD
+Project version: undefined
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 9.4.0 "cc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0")
+C linker for the host machine: cc ld.bfd 2.34
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ sanitycheckcpp.cc -o sanitycheckcpp.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/sanitycheckcpp.exe
+C++ compiler for the host machine: c++ (gcc 9.4.0 "c++ (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0")
+C++ linker for the host machine: c++ ld.bfd 2.34
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 9.4.0 "cc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0")
+C linker for the build machine: cc ld.bfd 2.34
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ sanitycheckcpp.cc -o sanitycheckcpp.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/sanitycheckcpp.exe
+C++ compiler for the build machine: c++ (gcc 9.4.0 "c++ (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0")
+C++ linker for the build machine: c++ ld.bfd 2.34
+Build machine cpu family: aarch64
+Build machine cpu: aarch64
+Host machine cpu family: aarch64
+Host machine cpu: aarch64
+Target machine cpu family: aarch64
+Target machine cpu: aarch64
+Pkg-config binary for 1 is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'libdpdk' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --modversion libdpdk` -> 0
+20.11.5.2.2
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --cflags libdpdk` -> 0
+-include rte_config.h -mcpu=cortex-a72 -I/opt/mellanox/dpdk/include/dpdk -I/opt/mellanox/dpdk/include/dpdk/../aarch64-linux-gnu/dpdk -I/opt/mellanox/dpdk/include/dpdk -I/usr/include/libnl3
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+Called `/usr/bin/pkg-config --libs libdpdk` -> 0
+-L/opt/mellanox/dpdk/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -Wl,--as-needed -lrte_node -lrte_graph -lrte_bpf -lrte_flow_classify -lrte_pipeline -lrte_table -lrte_port -lrte_fib -lrte_ipsec -lrte_vhost -lrte_stack -lrte_security -lrte_sched -lrte_reorder -lrte_rib -lrte_regexdev -lrte_rawdev -lrte_pdump -lrte_power -lrte_member -lrte_lpm -lrte_latencystats -lrte_kni -lrte_jobstats -lrte_gso -lrte_gro -lrte_gpudev -lrte_eventdev -lrte_efd -lrte_distributor -lrte_cryptodev -lrte_compressdev -lrte_cfgfile -lrte_bitratestats -lrte_bbdev -lrte_acl -lrte_timer -lrte_metrics -lrte_cmdline -lrte_pci -lrte_ethdev -lrte_meter -lrte_ip_frag -lrte_net -lrte_mbuf -lrte_mempool -lrte_hash -lrte_rcu -lrte_ring -lrte_eal -lrte_telemetry -lrte_kvargs -lbsd
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --libs libdpdk` -> 0
+-L/opt/mellanox/dpdk/lib/aarch64-linux-gnu -Wl,--as-needed -lrte_node -lrte_graph -lrte_bpf -lrte_flow_classify -lrte_pipeline -lrte_table -lrte_port -lrte_fib -lrte_ipsec -lrte_vhost -lrte_stack -lrte_security -lrte_sched -lrte_reorder -lrte_rib -lrte_regexdev -lrte_rawdev -lrte_pdump -lrte_power -lrte_member -lrte_lpm -lrte_latencystats -lrte_kni -lrte_jobstats -lrte_gso -lrte_gro -lrte_gpudev -lrte_eventdev -lrte_efd -lrte_distributor -lrte_cryptodev -lrte_compressdev -lrte_cfgfile -lrte_bitratestats -lrte_bbdev -lrte_acl -lrte_timer -lrte_metrics -lrte_cmdline -lrte_pci -lrte_ethdev -lrte_meter -lrte_ip_frag -lrte_net -lrte_mbuf -lrte_mempool -lrte_hash -lrte_rcu -lrte_ring -lrte_eal -lrte_telemetry -lrte_kvargs -lbsd
+Running compile:
+Working directory:  /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/tmpeyox2oye
+Command line:  c++ /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/tmpeyox2oye/testfile.cpp -o /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/tmpeyox2oye/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/tmpflw9srq_
+Command line:  c++ /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/tmpflw9srq_/testfile.cpp -o /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/tmpflw9srq_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/aarch64-linux-gnu/9/
+programs: =/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/bin/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/bin/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/lib/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/lib/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/:/lib/aarch64-linux-gnu/9/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/9/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Run-time dependency libdpdk found: YES 20.11.5.2.2
+Pkg-config binary for 1 is cached.
+Determining dependency 'doca-argp' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --modversion doca-argp` -> 0
+1.4.0079
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --cflags doca-argp` -> 0
+-DALLOW_EXPERIMENTAL_API -I/opt/mellanox/doca/include -I/usr/include/libnl3 -I/usr/include/json-c
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+Called `/usr/bin/pkg-config --libs doca-argp` -> 0
+-L/opt/mellanox/doca/lib/aarch64-linux-gnu -Wl,--as-needed -ldoca_argp
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --libs doca-argp` -> 0
+-L/opt/mellanox/doca/lib/aarch64-linux-gnu -Wl,--as-needed -ldoca_argp
+Run-time dependency doca-argp found: YES 1.4.0079
+Pkg-config binary for 1 is cached.
+Determining dependency 'doca-flow' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --modversion doca-flow` -> 0
+1.4.0079
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --cflags doca-flow` -> 0
+-include rte_config.h -mcpu=cortex-a72 -DALLOW_EXPERIMENTAL_API -I/opt/mellanox/dpdk/include/dpdk -I/opt/mellanox/dpdk/include/dpdk/../aarch64-linux-gnu/dpdk -I/opt/mellanox/dpdk/include/dpdk -I/opt/mellanox/doca/include -I/usr/include/libnl3 -I/usr/include/json-c
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+Called `/usr/bin/pkg-config --libs doca-flow` -> 0
+-L/opt/mellanox/doca/lib/aarch64-linux-gnu -Wl,--as-needed -ldoca_flow
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --libs doca-flow` -> 0
+-L/opt/mellanox/doca/lib/aarch64-linux-gnu -Wl,--as-needed -ldoca_flow
+Run-time dependency doca-flow found: YES 1.4.0079
+Pkg-config binary for 1 is cached.
+Determining dependency 'doca-common' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --modversion doca-common` -> 0
+1.4.0079
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --cflags doca-common` -> 0
+-DALLOW_EXPERIMENTAL_API -I/opt/mellanox/doca/include -I/usr/include/libnl3 -I/usr/include/json-c
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+Called `/usr/bin/pkg-config --libs doca-common` -> 0
+-L/opt/mellanox/doca/lib/aarch64-linux-gnu -Wl,--as-needed -ldoca_common
+env[PKG_CONFIG_PATH]: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig/:/opt/mellanox/dpdk/lib/aarch64-linux-gnu/pkgconfig:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig/:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+Called `/usr/bin/pkg-config --libs doca-common` -> 0
+-L/opt/mellanox/doca/lib/aarch64-linux-gnu -Wl,--as-needed -ldoca_common
+Run-time dependency doca-common found: YES 1.4.0079
+Build targets in project: 1
+
+Found ninja-1.10.0 at /usr/bin/ninja
+Running compile:
+Working directory:  /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/tmpxxlgm8i5
+Command line:  cc /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/tmpxxlgm8i5/testfile.c -o /home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build/meson-private/tmpxxlgm8i5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/aarch64-linux-gnu/9/
+programs: =/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/bin/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/bin/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/lib/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/lib/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/:/lib/aarch64-linux-gnu/9/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/9/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
