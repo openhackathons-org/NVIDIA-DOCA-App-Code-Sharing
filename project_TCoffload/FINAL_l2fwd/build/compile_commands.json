@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "/home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build",
+    "command": "cc -Idoca_l2fwd.p -I. -I.. -I../../common/src -I/opt/mellanox/dpdk/include/dpdk -I/opt/mellanox/dpdk/include/dpdk/../aarch64-linux-gnu/dpdk -I/usr/include/libnl3 -I/opt/mellanox/doca/include -I/usr/include/json-c -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g '-D DOCA_ALLOW_EXPERIMENTAL_API' -include rte_config.h -mcpu=cortex-a72 -DALLOW_EXPERIMENTAL_API -include rte_config.h -mcpu=cortex-a72 -MD -MQ doca_l2fwd.p/l2fwd.c.o -MF doca_l2fwd.p/l2fwd.c.o.d -o doca_l2fwd.p/l2fwd.c.o -c ../l2fwd.c",
+    "file": "../l2fwd.c",
+    "output": "doca_l2fwd.p/l2fwd.c.o"
+  },
+  {
+    "directory": "/home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build",
+    "command": "cc -Idoca_l2fwd.p -I. -I.. -I../../common/src -I/opt/mellanox/dpdk/include/dpdk -I/opt/mellanox/dpdk/include/dpdk/../aarch64-linux-gnu/dpdk -I/usr/include/libnl3 -I/opt/mellanox/doca/include -I/usr/include/json-c -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g '-D DOCA_ALLOW_EXPERIMENTAL_API' -include rte_config.h -mcpu=cortex-a72 -DALLOW_EXPERIMENTAL_API -include rte_config.h -mcpu=cortex-a72 -MD -MQ doca_l2fwd.p/.._common_src_dpdk_utils.c.o -MF doca_l2fwd.p/.._common_src_dpdk_utils.c.o.d -o doca_l2fwd.p/.._common_src_dpdk_utils.c.o -c ../../common/src/dpdk_utils.c",
+    "file": "../../common/src/dpdk_utils.c",
+    "output": "doca_l2fwd.p/.._common_src_dpdk_utils.c.o"
+  },
+  {
+    "directory": "/home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build",
+    "command": "cc -Idoca_l2fwd.p -I. -I.. -I../../common/src -I/opt/mellanox/dpdk/include/dpdk -I/opt/mellanox/dpdk/include/dpdk/../aarch64-linux-gnu/dpdk -I/usr/include/libnl3 -I/opt/mellanox/doca/include -I/usr/include/json-c -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g '-D DOCA_ALLOW_EXPERIMENTAL_API' -include rte_config.h -mcpu=cortex-a72 -DALLOW_EXPERIMENTAL_API -include rte_config.h -mcpu=cortex-a72 -MD -MQ doca_l2fwd.p/.._common_src_offload_rules.c.o -MF doca_l2fwd.p/.._common_src_offload_rules.c.o.d -o doca_l2fwd.p/.._common_src_offload_rules.c.o -c ../../common/src/offload_rules.c",
+    "file": "../../common/src/offload_rules.c",
+    "output": "doca_l2fwd.p/.._common_src_offload_rules.c.o"
+  },
+  {
+    "directory": "/home/ubuntu/doca_sharing/doca_sharing/FINAL_l2fwd/build",
+    "command": "cc -Idoca_l2fwd.p -I. -I.. -I../../common/src -I/opt/mellanox/dpdk/include/dpdk -I/opt/mellanox/dpdk/include/dpdk/../aarch64-linux-gnu/dpdk -I/usr/include/libnl3 -I/opt/mellanox/doca/include -I/usr/include/json-c -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g '-D DOCA_ALLOW_EXPERIMENTAL_API' -include rte_config.h -mcpu=cortex-a72 -DALLOW_EXPERIMENTAL_API -include rte_config.h -mcpu=cortex-a72 -MD -MQ doca_l2fwd.p/.._common_src_utils.c.o -MF doca_l2fwd.p/.._common_src_utils.c.o.d -o doca_l2fwd.p/.._common_src_utils.c.o -c ../../common/src/utils.c",
+    "file": "../../common/src/utils.c",
+    "output": "doca_l2fwd.p/.._common_src_utils.c.o"
+  }
+]
