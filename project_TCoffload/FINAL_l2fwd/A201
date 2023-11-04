@@ -1,0 +1,9 @@
+#!/bin/bash
+export PKG_CONFIG_PATH=${PKG_CONFIG_PATH}:/opt/mellanox/doca/lib/aarch64-linux-gnu/pkgconfig
+export PATH=${PATH}:/opt/mellanox/doca/tools
+rm -r ./build
+meson build
+cd build
+ninja
+cd build/
+./doca_l2fwd -m 1024 -b 03:00.0 --  -p 4 -q 1 -b 0
