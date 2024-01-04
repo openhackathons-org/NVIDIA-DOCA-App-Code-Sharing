@@ -123,6 +123,33 @@ This project is open-source and available under the [MIT License](/LICENSE).
 - Contributors and maintainers who dedicate their time to improve the 3DP-FNO project.
 
 
+3DP-FNO/
+│
+├── data_center/          # 数据处理中心代码
+│   ├── src/              # 源代码文件夹
+│   │   ├── main.py       # 主服务端应用程序
+│   │   ├── config.py     # 配置文件解析
+│   │   └── dpu.py        # DPU处理接口
+│   │
+│   ├── Dockerfile        # 用于构建数据中心服务容器的Dockerfile  /todo
+│   └── requirements.txt  # Python依赖文件  /todo
+│
+├── printer_client/       # 打印设备客户端代码
+│   ├── src/              # 源代码文件夹
+│   │   ├── client.py     # 客户端应用程序
+│   │   └── config.py     # 配置文件解析  /todo
+│   │
+│   ├── Dockerfile        # 用于构建设备客户端容器的Dockerfile /todo
+│   └── requirements.txt  # Python依赖文件 /todo
+│
+├── config/               # 配置文件夹
+│   ├── data_center.json  # 数据处理中心配置文件 /todo 
+│   └── printer.json      # 打印设备配置文件 /todo
+│
+├── tests/                # 测试代码文件夹   /todo
+├── LICENSE               # 许可文件 
+├── README.md             # 项目说明文件
+└── CONTRIBUTING.md       # 贡献指南文件
 
 
 <!Event Name>
