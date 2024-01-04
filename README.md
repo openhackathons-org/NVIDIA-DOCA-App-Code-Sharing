@@ -1,68 +1,133 @@
+这是一种使用DOCA和DPU技术来提升3D打印工厂效率的概念性解决方案，以及一个对应解决方案的README文件框架。解决方案假定通过NVIDIA的BlueField DPU运行DOCA框架能够助力提升打印指令处理、数据分析、网络安全和流量管理。
+
+# 解决方案概述
+## 关键特性：
+实时数据处理 — 使用DPU的高性能计算能力实现对3D打印任务的实时处理和调度。
+网络优化 — 利用DOCA提供的网络功能，优化打印设备的通信和数据传输效率。
+安全性增强 — 通过DOCA的安全API实施端到端的加密和入侵检测。
+设备监控 — 实施设备状态和性能的监控，确保设备正常运行，并预测维护需求。
+## 组件：
+数据处理中心 — 一个集中处理数据和分配3D打印任务的服务器，装载NVIDIA DPU。
+设备客户端 — 在每台打印设备上运行的轻量级客户端，用于与数据处理中心通信。
+网络基础设施 — 支持设备之间以及设备与数据处理中心之间的低延迟通信。
+
+# 3D打印工厂网络优化（3DP-FNO）
+
+## 概览
+
+3DP-FNO是旨在利用NVIDIA的DOCA软件框架和BlueField DPUs提升3D打印工厂操作效率的开源倡议。该项目的目标是利用DPUs强大的数据处理和网络功能，来简化数百台打印机的实时数据处理和响应需求。
+
+## 主要特性
+
+- 使用NVIDIA BlueField DPUs进行实时数据处理。
+- 优化连接设备的网络流量。
+- 增强设备对设备以及设备对数据中心通信的安全性。
+- 性能和状态监控以实现预测性维护。
+
+## 入门
+
+### 先决条件
+
+- 在您的数据中心安装NVIDIA BlueField-2 DPU。
+- 3D打印机连接到一个网络，且能运行Windows或Linux操作系统。
+- 基本的DOCA SDK和网络原理知识。
+
+### 安装
+
+1. **设置数据处理中心：**
+   - 按照[官方NVIDIA安装指南](#)安装BlueField-2 DPUs到您的服务器。
+   - 根据网络需求使用DOCA SDK配置DPUs。
+
+2. **部署到打印机：**
+   - 在每台3D打印机上安装3DP-FNO客户端应用程序（支持Windows或Linux）。
+   - 确保网络配置允许与数据处理中心的通信。
+
+3. **网络配置：**
+   - 根据DOCA网络API设置网络，以最小化延迟并最大化吞吐量。
+
+### 使用
+
+1. 使用`config`目录中提供的配置文件配置数据中心的处理需求。
+
+2. 在每台打印机上启动3DP-FNO客户端，并将设备注册至数据处理中心。
+
+3. 通过数据处理中心的仪表板监控性能和管理任务分配。
+
+## 贡献
+
+我们欢迎社区的贡献。请阅读[CONTRIBUTING.md](/CONTRIBUTING.md)文件，了解如何为项目贡献。
+
+## 许可证
+
+此项目是开源的，并在[MIT许可证](/LICENSE)下可用。
+
+## 致谢
+
+- 感谢NVIDIA提供DOCA SDK和支持社区。
+- 致力于改进3DP-FNO项目的贡献者和维护者。
+
+
+# 3DPrint-Factory-Network-Optimization (3DP-FNO)
+
+## Overview
+
+3DP-FNO is an open-source initiative designed to enhance the operational efficiency of 3D printing factories using NVIDIA's DOCA software framework and BlueField DPUs. The project aims to leverage the powerful data processing and networking capabilities of DPUs to streamline hundreds of printers' real-time data processing and response requirements.
+
+## Key Features
+
+- Real-time data processing with NVIDIA BlueField DPUs.
+- Network traffic optimization for connected devices.
+- Enhanced security for device-to-device and device-to-data center communications.
+- Performance and status monitoring for predictive maintenance.
+
+## Getting Started
+
+### Prerequisites
+
+- NVIDIA BlueField-2 DPUs installed in your data center.
+- 3D printers connected to a network and capable of running Windows or Linux OS.
+- Basic knowledge of DOCA SDK and networking principles.
+
+### Installation
+
+1. **Set up Data Processing Center:**
+   - Install BlueField-2 DPUs on your server following the [Official NVIDIA Installation Guide](#).
+   - Configure DPUs with DOCA SDK according to your network requirements.
+
+2. **Deploy to Printers:**
+   - Install the 3DP-FNO Client application on each 3D printer (Windows or Linux supported).
+   - Ensure network configuration allows for communication with the Data Processing Center.
+
+3. **Network Configuration:**
+   - Set up the network to minimize latency and maximize throughput based on the DOCA Networking APIs.
+
+### Usage
+
+1. Configure your data center's processing requirements using the configuration files provided in the `config` directory.
+   
+2. Start the 3DP-FNO Client on each printer and register the device with the Data Processing Center.
+
+3. Monitor performance and manage task distribution through the Data Processing Center's dashboard.
+
+## Contributing
+
+We welcome contributions from the community. Please read the [CONTRIBUTING.md](/CONTRIBUTING.md) file for how to contribute to the project.
+
+## License
+
+This project is open-source and available under the [MIT License](/LICENSE).
+
+## Acknowledgements
+
+- Thanks to NVIDIA for providing the DOCA SDK and supporting the community.
+- Contributors and maintainers who dedicate their time to improve the 3DP-FNO project.
+
+
+
+
 <!Event Name>
 # DOCA 无处不在-NVIDIA DOCA 应用代码分享活动
 
-<!Event Period>
-在线活动：2023 年 4 月 10 日至 2024 年 1 月 10 日
-<!Event Landing Page for Registration>
-想要参加 **NVIDIA DOCA 应用代码分享**活动，请[**立即注册**](https://www.nvidia.cn/networking/doca-application-code-sharing/  "活动主页")!
 
-
-<!Event Introduction>
-## 代码重塑创新应用
-> 参加 NVIDIA DOCA 应用代码分享活动，为新一代 AI 驱动的数据中心、高性能计算及云计算基础设施带来前所未有的创新。借助 [**NVIDIA® DOCA™ 软件框架**](https://developer.nvidia.cn/zh-cn/networking/doca)，开发者可以释放 [**NVIDIA BlueField DPU**](https://www.nvidia.cn/networking/products/data-processing-unit/) 强大数据中心基础设施的硬件能力，构建创新的软件定义、硬件加速数据中心基础设施应用程序与服务。通过 DOCA 应用代码分享活动，DOCA 开发者可以在开源平台展示他们的奇思妙想，保持他们在 NVIDIA DOCA 开发知识和技能方面的持续领先，同时让其他 DOCA 开发者从他们分享的 DOCA 应用代码中受益，吸引更多的开发者为 DOCA 开发者社区的共建贡献力量。
-
-<!Why>
-## 为何要参加 NVIDIA DOCA 应用代码分享活动？
-> 热衷于基于 NVIDIA DOCA 软件框架开发数据中心基础设施应用程序与服务，且您有意愿在开源平台分享您的 DOCA 应用程序项目和代码，那么您就可以以个人名义参加 NVIDIA DOCA 应用代码分享活动。借助 NVIDIA DOCA 应用代码分享活动，您可以展示您在新一代数据中心、高性能计算及云计算基础设施方面的创新技术，分享您的开源代码，结交志同道合的开发者，一道为构建加速、高效和安全的数据中心基础设施提供动力。
-
-<!Who>
-## 谁可以参加？
-> **NVIDIA DOCA 应用代码分享活动面向所有人员免费开放**
-无论您是经验丰富的研究人员，还是新手开发者、独立软件供应商 (ISV) 合作伙伴或云服务提供商，还是在校学生或初创公司，只要您热衷 NVIDIA DOCA 软件开发，我们就期待您以个人名义参与，且无需任何费用。快来注册参与，展示您出色的 NVIDIA DOCA 创新开发技能吧！
-
-<!Regestration>
-## 如何注册？
-> NVIDIA DOCA 应用代码分享活动将于 2023 年 4 月 10 日开放注册，并将于 2024 年 1 月 10 日关闭注册。注册期间，您可以通过点击[**活动主页**](https://www.nvidia.cn/networking/doca-application-code-sharing/  "活动主页")上的“立即注册”按钮进行注册。您需要在开源平台 GitHub 指定活动专区发布基于 NVIDIA DOCA 开发的应用的源代码，并在注册时提交发布上述应用源代码的 GitHub 账号链接。
->
-> 活动期间内，活动组委会会定期组织评委对注册时提交的 NVIDIA DOCA 应用代码项目进行持续入围审核、评选及公布。在关闭注册后，评委将评定出获奖开发者，并对他们进行奖励和表彰。
-
-<!Pull Requests>
-## 如何提交发布 DOCA 应用代码（必读）
-> **为了您更好的参与活动，建议采用的开发环境：**
-> - 硬件环境：NVIDIA BlueField-2 DPU 或 NVIDIA BlueField-3 DPU
-> - 软件环境：NVIDIA DOCA 1.5.1 及以上版本
-> - 开发级别：采用更高级别抽象的 DOCA 库，如 DOCA Flow
->
-> **如果您没有相应的软硬件开发环境，请以电子邮件方式联系 NVIDIA 授权合作伙伴 DPU &  DOCA 卓越中心获得基于 NVIDIA BlueField-2 DPU 的免费的 DOCA 开发环境。**
-> - 丽台（上海）信息科技有限公司 doca@leadtek.com
-> - 上海信泓智能科技有限公司 doca@zentek.com.cn
->
-> 如需提交发布 DOCA 应用代码，请参考 [**NVIDIA DOCA 应用代码分享活动 - 提交流程**](https://github.com/openhackathons-org/NVIDIA-DOCA-App-Code-Sharing/blob/main/assets/DOCA-Application-Code-Sharing.pdf "提交流程") 文档。
->
-> 如遇到困难或问题，请联系活动负责人 adah@nvidia.com。
-  
-<!Prizes>
-## 活动奖品
-> 除了以下奖品外，获奖的 DOCA 应用代码还将在 NVIDIA 官方博客中获得特别表彰。
-
-<table>
-  <tr> 
-    <td align="center"><b>第一名</b></td>
-    <td align="center"><b>第二名</b></td>
-    <td align="center"><b>第三名</b></td>
-  </tr>
-  <tr>
-    <td align="center" width="400"><img src="/assets/dpu-hackathon-1st-place-jetson-tx2-3c33-l@2x.jpg" title="一等奖" height="150" width="auto"></td>
-    <td align="center" width="400"><img src="/assets/nvidia-jetson-tx2-module-2c50-l@2x.jpg" title="二等奖" height="150" width="auto"></td>
-    <td align="center" width="400"><img src="/assets/Backpack+T.jpg" title="三等奖" height="150" width="auto"></td>   
-  </tr>  
-  <tr>
-    <td align="center">NVIDIA Jetson TX2 NX 4GB 核心模块 + Y-C6 载板，以及NVIDIA 官方双肩背包和 T 恤衫</font></td>
-    <td align="center">NVIDIA Jetson TX2 NX 4GB 核心模块，以及NVIDIA 官方双肩背包和 T 恤衫</td>      
-    <td align="center">NVIDIA 官方双肩背包及 T 恤衫</td>
-  </tr>
-</Table>
-
-<!T&C>
 ## 活动注册条款与条件
 > 请参考 NVIDIA DOCA 应用代码分享活动的[**条款与条件**](https://www.nvidia.cn/networking/doca-application-code-sharing/terms-and-conditions/ "条款与条件")。
