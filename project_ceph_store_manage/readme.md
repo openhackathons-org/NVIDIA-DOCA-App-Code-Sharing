@@ -10,7 +10,7 @@
 
 > 相比于传统的在主机操作系统部署存储客户端的方式接入远端存储资源，使用 BuleField SNAP 接入远端存储资源可以有效的节省主机的cpu资源，卸载主机对网络的操作，同时提高部署的灵活性。
 
-> 本项目旨在构建一套存储管理系统，对网络中的bulefield3 DPU、安装DPU的主机和存储集群进行统一管理。利用bulefield3 DPU中的SNAP为主机模拟nvme存储设备，使用SNAP 的 rbd 接口对接ceph集群。
+> 本项目旨在构建一套存储管理系统，对网络中的bulefield3 DPU、安装DPU的主机和存储集群进行统一管理。利用bulefield3 DPU中的SNAP为主机模拟nvme存储设备，SNAP 使用rbd接口对接ceph集群。
 
 
 ##  项目规划内容：
