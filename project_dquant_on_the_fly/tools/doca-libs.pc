@@ -1,0 +1,11 @@
+prefix=/opt/mellanox/doca
+libdir=${prefix}/lib/x86_64-linux-gnu
+includedir=${prefix}/include
+
+Name: doca_libs
+Description: Internal-only DOCA pkg-config file. Not for direct use.
+Use doca instead of this file
+Version: 2.2.0080
+Libs: -Wl,--as-needed -L${libdir} -ldoca_common -ldoca_argp -ldoca_dpdk_bridge -ldoca_dma -ldoca_compress -ldoca_telemetry -ldoca_ipsec -ldoca_flow -ldoca_erasure_coding -ldoca_flow_ct -ldoca_comm_channel -ldoca_regex -ldoca_apsh -ldoca_sha -ldoca_dpa -ldoca_rdma -ldoca_dpi -ldoca_eth -ldoca_pcc
+Libs.private: -lstdc++
+Cflags: -I${includedir} -DALLOW_EXPERIMENTAL_API
