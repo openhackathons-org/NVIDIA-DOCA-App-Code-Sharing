@@ -1,0 +1,3 @@
+[submodule "doca_ar_project"]
+	path = doca_ar_project
+	url = https://github.com/markchen7788/doca_ar.git
