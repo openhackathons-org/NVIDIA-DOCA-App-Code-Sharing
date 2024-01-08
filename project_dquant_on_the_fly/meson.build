@@ -36,7 +36,7 @@ srcs = [
 	'c/common.c',
 	'c/comm_channel_endpoint.c',
 	'c/cmdline_tool.c',
-	'c/router.c',
+	'c/router_service.c',
 	'core/DOCA_dist_fs.cpp',
 	# Main
 	'tools/' + application_name + '_host_admin_tool.c',

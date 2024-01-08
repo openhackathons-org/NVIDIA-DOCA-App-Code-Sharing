@@ -159,6 +159,12 @@ int DOCA_dist_fs_open(const std::string &filename, dist_fs_rpc action, bool dpu_
 		.tv_nsec = SLEEP_IN_NANOS,
 	};
 
+	result = doca_log_create_standard_backend();
+	if (result != DOCA_SUCCESS) {
+		DOCA_LOG_ERR("Failed to create LOG: %s", doca_get_error_string(result));
+		return result;
+	}
+
     // step-1 TODO (yiakwy) : parse and populate dist_fs_core_states, dma_copy_cfg from conf
     strlcpy(dma_copy_cfg.file_path, filename.c_str(), MAX_ARG_SIZE);
 
@@ -194,7 +200,13 @@ int DOCA_dist_fs_open(const std::string &filename, dist_fs_rpc action, bool dpu_
 		return result;
 	}
 
-    return DOCA_SUCCESS;
+__cleanup_state__:
+
+	exit_status = EXIT_SUCCESS;
+
+
+
+    return exit_status;
 }
 
 int DOCA_dist_fs_close(int fd, bool dpu_offload) {
