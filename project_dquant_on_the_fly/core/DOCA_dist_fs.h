@@ -2,6 +2,16 @@
 
 #include <string>
 
+namespace doca_dist_fs {
+    int open(const std::string &filename, dist_fs_rpc action = {}, bool dpu_offload = false) {
+        return DOCA_dist_fs_open(filename, action, dpu_offload);
+    }
+
+    int close(int fd, bool dpu_offload = false) {
+        return DOCA_dist_fs_close(fd, dpu_offload);
+    }
+} // namespace doca_dist_fs
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -21,7 +31,7 @@ int DOCA_dist_fs_open(const std::string &filename, dist_fs_rpc action = {}, bool
 */
 int DOCA_dist_fs_close(int fd, bool dpu_offload = false);
 
-// TODO (yiakwy) : read, write, seek, ...
+// TODO (yiakwy) : impl read, write, seek, open_async, close_async, read_async, write_async, seek_async...
 
 #ifdef __cplusplus
 }
