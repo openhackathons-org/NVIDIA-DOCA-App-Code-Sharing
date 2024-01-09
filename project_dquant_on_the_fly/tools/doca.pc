@@ -1,0 +1,11 @@
+prefix=/opt/mellanox/doca
+libdir=${prefix}/lib/x86_64-linux-gnu
+includedir=${prefix}/include
+
+Name: doca
+Description: DOCA (doca) pkg-config file.
+Version: 2.2.0080
+Requires: doca-libs
+Requires.private: libibverbs, libmlx5, json-c, libflexio, libdpdk, openssl, libnghttp2, liburiparser, libcrypto, libssl, glib-2.0, yara, libzip
+Libs.private: -L${libdir} -l:libdoca_pcc.a -l:libdoca_eth.a -l:libdoca_dpi.a -l:libdoca_rdma.a -l:libdoca_dpa.a -l:libdoca_sha.a -l:libdoca_apsh.a -l:libdoca_regex.a -l:libdoca_comm_channel.a -l:libdoca_flow_ct.a -l:libdoca_erasure_coding.a -l:libdoca_flow.a -l:libdoca_ipsec.a -l:libdoca_telemetry.a -l:libdoca_compress.a -l:libdoca_dma.a -l:libdoca_dpdk_bridge.a -l:libdoca_argp.a -l:libdoca_common.a -Wl,--as-needed -pthread -lm -L/opt/mellanox/collectx/lib -lclx_api /opt/mellanox/dpdk/lib/x86_64-linux-gnu/libmlx5dr_dev.a -lrxp_compiler -lresolv -lpthread
+Cflags: -I${includedir}

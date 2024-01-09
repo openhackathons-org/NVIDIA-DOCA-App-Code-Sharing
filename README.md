@@ -46,9 +46,40 @@ The solution implements accelerated IO (XIO) files system API to enable RoCE vis
 - 丽台（上海）信息科技有限公司 doca@leadtek.com
 - 上海信泓智能科技有限公司 doca@zentek.com.cn
 
+## 解决方案
+
+<div>
+<img src="/assets/DOCA_dist_fs.drawio.png" title="DOCA distributed fs + DPU ops" height="150" width="auto">
+</div>
+
+我们首先通过 DOCA 实现了文件系统 DOCA_dist_fs。
+
+如上图，当 Host 需要访问分 NVMe 分布式文件系统，可以将文件读取加载任务卸载到 DPU Arm 核心上。
+
+We first implement distributed file system **DOCA_dist_fs** with DOCA.
+
+As illustrated in the above picture, a Host can visit NVMe storage system, and can offload data reading tasks to DPU ARM.
+
+```
+int fd = doca_dist_fs::open(filename, action/*rpc action*/, true/*offload to DPU*/)
+```
+
+DOCA 通过 RPC 在 分布式文件系统上打开目标文件，HOST 并发起 DMA 任务，DPU 通过 DMA 将数据写回到 Host主机上:
+
+DOCA initiate RPCs in a distributed filesystem: start DMA and write data back to Host from DMA in the host. 
+
+```
+int ret = doca_dist_fs::read(fd, buf, action/*rpc action*/, true/*offlaod to  DPU*/);
+```
+
+文件的读取绕过最终 绕过 CPU，而 HOST 可以 通过 DMA 接受文件信息。
+
+Finally this by-pass CPU trends blew up when 
+
+
 ## 安装
 
-TBD
+参考 **explore-DPU-tutorial.ipynb**
 
 ## 应用测试和案例
 
