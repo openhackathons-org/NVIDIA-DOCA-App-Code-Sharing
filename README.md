@@ -1,30 +1,31 @@
+## HOST Memory Access Framework (HMAF)
 
-
-## HOST memory access framework
 ### Introduction
-* HMAF: An efficient memory management and automatic memory registration framework designed specifically for DPUs, supporting access to HOST host process memory. This framework intelligently manages and maps memory resources. Communication is facilitated through the use of the Common Channel and doca_dma, where the common channel is responsible for initializing the communication channel of doca_dma during the initialization phase. doca_dma serves as the primary means for memory access and communication in this framework, achieving performance close to the theoretical limits of DMA communication.
+* HMAF: An efficient framework for DPU accessing Host memory, specifically designed for DPUs, support that DPU's process directly access remote memory in HOST host processes. It enables automatic remote memory registration and management including remote memory map. Transparent to upper-layer developers, allowing developers to read and write Host memory on DPU just like on the Host. The framework intelligently manages and maps memory resources. It utilizes DOCA Comm Channel and DOCA DMA, where DOCA Comm Channel is only used during initialization to construct the initial communication channel for DOCA DMA. Subsequently, DOCA DMA is used for communication and memory operations, with performance metrics matching performance of DOCA DMA, introducing minuscule additional overhead.
+* Usage Scenario: Ideal for scenarios where some of services within the same process are offloaded from the HOST to the DPU. This framework is responsible for remote memory access in DPU.
 
 ### File Structure
-* comm_chann: This folder contains the code used to construct the DMA communication channel during framework initialization, only utilized in the initialization phase.
+* include: Stores SDK header files, providing interface definitions for the framework's functionality.
 
-* include: This directory stores SDK header files, providing interface definitions for the framework's functionality.
+* comm_chann: This folder contains encapsulated code for DOCA Comm Channel, used during initialization to construct the DOCA DMA communication channel, only uses it in the initialization phase.
 
-* memory: Includes encapsulation files for DMA operations and communication, providing convenient interfaces for implementing memory operations.
+* memory: Includes encapsulation files for DMA operations and DOCA DMA communication, encapsulating the implementation of DOCA DMA.
 
-* proxy_func: This folder encapsulates address mapping and memory access models, offering developers a direct interface for SDK development.
+* proxy_func: This folder encapsulates memory management and memory mapping management, providing implementations of SDK interfaces that developers can directly invoke.
 
 
 
-## HOST memory access framework
+## HOST Memory Access Framework (HMAF)
 
 ### Introduction
 
-* HMAF: 一款高效的内存管理和自动内存注册框架，专为 DPU 设计，支持对 HOST 主机进程内存的自动访问。该框架能够智能地管理和映射内存资源。通过使用 Common Channel 和 doca_dma 进行通信，其中 common channel 在初始化阶段负责对 doca dma 通信信道进行初始化。doca dma 在此框架中充当主要的内存访问和通信手段，其性能可达到 DMA 通信的理论极限。
+* 一款高效的 DPU 访问 Host 内存框架，专为 DPU 设计，支持 DPU 对 HOST 主机进程内存的自动访问。支持内存自动注册以及内存自动管理。对上层开发者透明，开发者可以像在 Host 一样在  DPU 上对 Host 内存进行读写操作。该框架能够智能地管理和映射内存资源。它使用了 DOCA Comm Channel 和 DOCA DMA，其中 DOCA Comm Channel 仅在初始化阶段使用，通过它构建 DOCA DMA 的初始通信信道，此后就一直使用 DOCA DMA 进行通信以及操作内存，其性能指标完成与 DOCA DMA 的性能相同，几乎没有引入额外的开销。
+* 使用场景：可以使用在 HOST 卸载同进程的服务到 DPU 上时，本框架可以负责内存的同步工作。
 
 ### File strcution
 
-* comm_chann : 该文件夹包含了框架初始化时用于构建 DMA 通信信道的代码，仅在初始化阶段使用。
 * include : 存放 SDK 的头文件，提供对框架功能的接口定义。
-* memory : 包含进行 DMA 操作和 DMA 通信的封装文件，为实现内存操作提供了便捷的接口。
-* proxy_func : 该文件夹封装了地址映射和访存模型，提供了对 SDK 的开发接口，开发者可以直接调用的实现。
+* comm_chann : 该文件夹包含了 DOCA Comm Channel 的封装代码，在初始化时用于构建 DOCA DMA 通信信道，仅在初始化阶段使用。
+* memory : 包含进行 DMA 操作和 DOCA DMA 通信的封装文件，对DOCA DMA 实现的封装。
+* proxy_func : 该文件夹封装了内存管理以及内存映射管理，提供了对 SDK 的开发调用接口的实现，开发者可以直接调用的实现。
 
